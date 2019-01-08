@@ -16,6 +16,9 @@
         "squizlabs/php_codesniffer": "^3.4",
         "zendframework/zend-diactoros": "^2.1"
     },
+    "provide": {
+        "psr/http-server-middleware": "^1.0"
+    },
     "suggest": {
         "psr/http-message-implementation": "Please install a psr/http-message-implementation to consume the middleware; e.g., zendframework/zend-diactoros"
     },
