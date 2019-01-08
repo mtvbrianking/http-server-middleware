@@ -40,15 +40,12 @@
     },
     "scripts": {
         "test": [
-            "vendor/bin/phpunit --colors --coverage-text --configuration=phpunit.xml.dist"
+            "phpunit --colors --coverage-text --configuration=phpunit.xml.dist"
         ],
-        "snif": [
-            "vendor/bin/phpcs -s",
-            "vendor/bin/phpcbf",
-            "vendor/bin/php-cs-fixer fix --diff --dry-run -v"
-        ],
-        "fix": [
-
+        "cs-fix": [
+            "phpcs -s",
+            "phpcbf",
+            "php-cs-fixer fix --diff --dry-run"
         ]
     }
 }
